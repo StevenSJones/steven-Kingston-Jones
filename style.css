@@ -1,0 +1,66 @@
+.docParent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.centerWrapper {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerDarkBackground {
+  background-color: black;
+  padding: 2rem;
+  grid-column: 1 / 4;
+}
+
+@font-face {
+  font-family: cyberway riders;
+  src: url(CyberwayRiders-lg97d.ttf);
+}
+
+.neon-text {
+  font-family: cyberway riders;
+  font-size: 6rem;
+  color: fuchsia;
+  background: -webkit-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
+  background: -moz-linear-gradient(left, fuchsia, white,  rgb(34, 153, 233));
+  background: -ms-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.leftSidebarDarkBackground {
+  grid-column: 1 / 2;
+  background-image: url(./img/pink-paint-back-left/pink-paint-spatter.jpg);
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; */
+}
+
+.mainDarkBackground {
+  grid-column: 2 / 3;
+  background-image: url(img/main-black-back/dark-brickback-2.jpg);
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; */
+}
+
+.rightSidebarDarkBackground {
+  grid-column: 3 / 4;
+  background-image: url(./img/blue-paint-back-right/blue-paint-spatter.jpg);
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; */
+}
+
+.footererDarkBackground {
+  grid-column: 1 / 4;
+}
