@@ -81,10 +81,10 @@ html {
   height: 40rem;
   width: 15rem;
   background-image: url(./img/blue-paint-back-right/blue-paint-spatter.jpg);
-  /* -webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; */
+  background-size:cover;
+  -o-background-size: cover;
 }
 
 /* ----------------------------------------------- */
