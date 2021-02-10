@@ -1,7 +1,19 @@
+body,
+html {
+  /* text-rendering: The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures. */
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .docParent {
   display: grid;
   grid-template: auto 1fr auto / auto 1fr auto;
 }
+
+/* ----------------------------------------------- */
+/* header */
 
 .centerWrapper {
   width: auto;
@@ -13,7 +25,8 @@
 
 .headerDarkBackground {
   background-color: black;
-  padding: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   grid-column: 1 / 4;
 }
 
@@ -24,36 +37,49 @@
 
 .neon-text {
   font-family: cyberway riders;
-  font-size: 6rem;
+  font-size: 4rem;
   color: fuchsia;
   background: -webkit-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
-  background: -moz-linear-gradient(left, fuchsia, white,  rgb(34, 153, 233));
+  background: -moz-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
   background: -ms-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
+/* ------------------------------------------------ */
+/* left sidebar */
+
 .leftSidebarDarkBackground {
   grid-column: 1 / 2;
+  height: 40rem;
+  width: 15rem;
   background-image: url(./img/pink-paint-back-left/pink-paint-spatter.jpg);
-  /* -webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; */
+  -o-background-size: cover;
 }
+
+/* ----------------------------------------------- */
+/* main */
 
 .mainDarkBackground {
   grid-column: 2 / 3;
   background-image: url(img/main-black-back/dark-brickback-2.jpg);
-  /*-webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; */
+  -o-background-size: cover;
 }
+
+/* ----------------------------------------------- */
+/* right sidebar */
 
 .rightSidebarDarkBackground {
   grid-column: 3 / 4;
+  height: 40rem;
+  width: 15rem;
   background-image: url(./img/blue-paint-back-right/blue-paint-spatter.jpg);
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -61,6 +87,11 @@
   -o-background-size: cover; */
 }
 
+/* ----------------------------------------------- */
+/* footer */
+
 .footererDarkBackground {
+  height: 5rem;
+  width: 100%;
   grid-column: 1 / 4;
 }
