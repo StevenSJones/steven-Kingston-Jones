@@ -3,7 +3,7 @@ html {
   /* text-rendering: The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures. */
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  width: 100% !important;
+  /* width: 100% !important; */
   height: 100% !important;
 }
 
@@ -25,22 +25,24 @@ html {
 
 .headerDarkBackground {
   background-color: black;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   grid-column: 1 / 4;
 }
 
+.paddingThreeRem {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 @font-face {
-  font-family: cyberway riders;
-  src: url(CyberwayRiders-lg97d.ttf);
+  font-family: Potra;
+  src: url(Potra-E0Ye.ttf);
 }
 
 header .neon-text {
   text-align: center;
-  font-family: cyberway riders;
+  font-family: Potra;
   font-size: 4rem;
   letter-spacing: 0.5rem;
-  /* text-transform: uppercase; */
   background: -webkit-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
   background: -moz-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
   background: -ms-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
@@ -82,15 +84,37 @@ ul.nav li {
   background-repeat: no-repeat;
 }
 
+.styledTextPotraWhite {
+  text-align: center;
+  font-family: Potra;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
 /* ----------------------------------------------- */
 /* main */
 
-.mainDarkBackground {
+.darkImgBackground {
   grid-column: 2 / 3;
   background-image: url(img/main-black-back/dark-brickback-2.jpg);
   background-size: cover;
 }
 
+.whiteDubBorder {
+  border: double;
+  border-width: 1rem;
+  /* border-radius: 100%; */
+}
+
+.styledTextGradient {
+  text-align: center;
+  font-family: Potra;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  color: white;
+}
 /* ----------------------------------------------- */
 /* right sidebar */
 
@@ -110,4 +134,22 @@ ul.nav li {
   height: 5rem;
   width: 100%;
   grid-column: 1 / 4;
+  background: -webkit-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
+  background: -moz-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
+  background: -ms-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
+}
+
+.styledTextPotraBlack {
+  text-align: center;
+  font-family: Potra;
+  font-size: 2rem;
+  letter-spacing: 0.10rem;
+  color: black;
+  width: 100%;
+  height: fit-content;
+}
+
+.marginThreeRem {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
