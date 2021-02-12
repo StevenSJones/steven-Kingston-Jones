@@ -12,11 +12,6 @@ html {
   grid-template: auto 1fr auto / auto 1fr auto;
 }
 
-.imgResponsive {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 /* ----------------------------------------------- */
 /* header */
 
@@ -30,8 +25,8 @@ html {
 
 .headerDarkBackground {
   background-color: black;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   grid-column: 1 / 4;
 }
 
@@ -40,10 +35,11 @@ html {
   src: url(CyberwayRiders-lg97d.ttf);
 }
 
-.neon-text {
+header .neon-text {
+  text-align: center;
   font-family: cyberway riders;
   font-size: 4rem;
-  letter-spacing: 0.50rem;
+  letter-spacing: 0.5rem;
   /* text-transform: uppercase; */
   background: -webkit-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
   background: -moz-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
