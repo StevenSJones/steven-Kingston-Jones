@@ -12,6 +12,11 @@ html {
   grid-template: auto 1fr auto / auto 1fr auto;
 }
 
+.imgResponsive {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /* ----------------------------------------------- */
 /* header */
 
@@ -38,13 +43,35 @@ html {
 .neon-text {
   font-family: cyberway riders;
   font-size: 4rem;
-  color: fuchsia;
+  letter-spacing: 0.50rem;
+  /* text-transform: uppercase; */
   background: -webkit-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
   background: -moz-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
   background: -ms-linear-gradient(left, fuchsia, white, rgb(34, 153, 233));
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+/* ------------------------------------------------------ */
+/* nav */
+
+.nav {
+  background-color: white;
+  color: #777;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #777;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* ------------------------------------------------ */
@@ -55,10 +82,8 @@ html {
   height: 40rem;
   width: 15rem;
   background-image: url(./img/pink-paint-back-left/pink-paint-spatter.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 /* ----------------------------------------------- */
@@ -67,10 +92,7 @@ html {
 .mainDarkBackground {
   grid-column: 2 / 3;
   background-image: url(img/main-black-back/dark-brickback-2.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
 }
 
 /* ----------------------------------------------- */
@@ -81,10 +103,8 @@ html {
   height: 40rem;
   width: 15rem;
   background-image: url(./img/blue-paint-back-right/blue-paint-spatter.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size:cover;
-  -o-background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 /* ----------------------------------------------- */
