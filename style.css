@@ -23,14 +23,19 @@ html {
   justify-content: center;
 }
 
-.headerDarkBackground {
-  background-color: black;
+.headerImgBackground {
+  background-image: url(img/main-black-back/dark-brickback-2.jpg);
+  background-size: cover;
   grid-column: 1 / 4;
 }
 
-.paddingThreeRem {
+.paddingTopBotThreeRem {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.paddingAllTwoRem {
+  padding: 2rem 0.5rem 2rem 0.5rem;
 }
 
 @font-face {
@@ -102,10 +107,15 @@ ul.nav li {
   background-size: cover;
 }
 
-.whiteDubBorder {
+.darkDubBorder {
   border: double;
-  border-width: 1rem;
+  border-width: 0.5rem;
   /* border-radius: 100%; */
+}
+
+.whiteDubBorder {
+  border: double white;
+  border-width: 0.5rem;
 }
 
 .styledTextGradient {
@@ -143,13 +153,13 @@ ul.nav li {
   text-align: center;
   font-family: Potra;
   font-size: 2rem;
-  letter-spacing: 0.10rem;
+  letter-spacing: 0.1rem;
   color: black;
   width: 100%;
   height: fit-content;
 }
 
 .marginThreeRem {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
