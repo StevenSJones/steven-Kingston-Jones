@@ -98,7 +98,9 @@ ul.nav li {
   height: 40rem;
   width: 15rem;
   background-image: url(./img/pink-paint-back-left/pink-paint-spatter.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:bottom left;
   background-repeat: no-repeat;
 }
 
@@ -143,7 +145,9 @@ ul.nav li {
   height: 40rem;
   width: 15rem;
   background-image: url(./img/blue-paint-back-right/blue-paint-spatter.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom left ;
   background-repeat: no-repeat;
 }
 
