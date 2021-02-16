@@ -2,11 +2,13 @@ $(document).ready(function(){
     // constructing a queryURL variable I will use instead of the literal string inside of the ajax method
 let searchOMDB = function(movieTitle){
     const ajaxOptions = {
-        queryURL: "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=6fe2f8b3",
+        url: "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=6fe2f8b3",
         method: "GET",
+        dataType: "json" 
     };
+
     $.ajax(ajaxOptions).then(function(response) {
-        console.log(response)
+        console.log(response);
     })
 };
 
