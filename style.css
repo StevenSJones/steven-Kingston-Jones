@@ -75,6 +75,12 @@ header .neon-text {
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+  list-style: none;
+  padding-left: 0px;
+}
+
 ul.nav li {
   display: inline-block;
   text-transform: uppercase;
