@@ -9,6 +9,11 @@ let searchOMDB = function(movieTitle){
 
     $.ajax(ajaxOptions).then(function(response) {
         console.log(response);
+        $("<div>").text(response.Title).appendTo(document.body);
+        $("<div>").text(response.Year).appendTo(document.body);
+        $("<div>").text(response.Actors).appendTo(document.body);
+        $("<div>").text(response.Plot).appendTo(document.body);
+        $("<div>").text(response.Released).appendTo(document.body);
     })
 };
 
